@@ -1,0 +1,87 @@
+/* Gallery.css */
+
+.gallery-container {
+  padding: 20px 50px;
+  background-color: #f8f9fa;
+}
+
+.masonry-grid {
+  display: flex;
+  margin-left: -30px; /* Adjust gutter size */
+  width: auto;
+}
+
+.masonry-grid_column {
+  padding-left: 30px; /* Adjust gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your gallery images */
+.gallery-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background-color: white; /* For loading background */
+}
+
+.gallery-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .gallery-container {
+    padding: 20px 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .gallery-container {
+    padding: 15px 30px;
+  }
+  
+  .masonry-grid {
+    margin-left: -20px;
+  }
+  
+  .masonry-grid_column {
+    padding-left: 20px;
+  }
+  
+  .gallery-img {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    padding: 10px 20px;
+  }
+  
+  .gallery-img {
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-container {
+    padding: 10px;
+  }
+  
+  .masonry-grid {
+    margin-left: -10px;
+  }
+  
+  .masonry-grid_column {
+    padding-left: 10px;
+  }
+  
+  .gallery-img {
+    margin-bottom: 10px;
+  }
+}

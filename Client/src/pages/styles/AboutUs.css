@@ -1,0 +1,20 @@
+.hero-section .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-image {
+    max-height: 600px;
+    overflow: hidden;
+  }
+  
+  .team-section .card {
+    transition: transform 0.3s;
+  }
+  
+  .team-section .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .services-section {
+    padding: 4rem 0;
+  }

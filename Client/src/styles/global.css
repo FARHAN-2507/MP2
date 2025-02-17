@@ -1,0 +1,94 @@
+
+/* global.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", serif;
+    background-color: #f0f0f0;
+  color: #f8f9fa;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+/* Custom color palette */
+:root {
+    --primary-color: #6d4c41;    /* Warm brown */
+    --secondary-color: #d7ccc8;  /* Light beige */
+    --accent-color: #bf360c;     /* Deep orange */
+  }
+  
+  /* Responsive banner styles */
+  .stats-banner {
+    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+    color: black;
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stats-banner i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .stats-banner {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+    
+    .stats-banner i {
+      font-size: 2rem;
+    }
+    
+    .stats-banner h3 {
+      font-size: 1.25rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .stats-banner {
+      text-align: center;
+      margin: 1rem 0.5rem;
+      padding: 1rem;
+    }
+    
+    .stats-banner .col-md-4 {
+      margin-bottom: 1.5rem;
+    }
+    
+    .stats-banner i {
+      font-size: 1.75rem;
+    }
+  }
+
+  /* Consistent button styling */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  
+  /* Card styling */
+  .card {
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  

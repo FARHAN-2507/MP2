@@ -1,0 +1,29 @@
+/* footer.css */
+
+/* Darker background with light text */
+footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+  }
+  
+  /* Styling for footer links */
+  footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer bottom text */
+  footer .footer-bottom {
+    font-size: 0.875rem;
+    color: #ccc;
+  }
+  
+  /* Spacing between sections */
+  footer .container .row {
+    margin-bottom: 20px;
+  }
+  
